@@ -4,9 +4,8 @@ import (
 	"github.com/clipperhouse/gen/typewriter"
 )
 
-var templates = typewriter.TemplateSet{
-
-	"predicate": &typewriter.Template{
+var predicateTemplates = typewriter.TemplateSet{
+	Common: &typewriter.Template{
 		Text: `// {{.Name}}Predicate is a function that accepts a {{.Pointer}}{{.Name}} and returns a bool.  Use this type where you would use func({{.Pointer}}{{.Name}}) bool.
 type {{.Name}}Predicate func(item {{.Pointer}}{{.Name}}) bool
 `},

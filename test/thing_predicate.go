@@ -2,8 +2,11 @@
 // TypeWriter: predicate
 // Directive: +test on main.Thing
 
-// Generated Predicates
+// Simple predicates with boolean combinations
 // See http://clipperhouse.github.io/gen for documentation on gen
+// Not() is syntacticly a bit ugly.  Ideally, you would say something
+// like Not(other). Because there's no overloading, you have to settle
+// for other.Not()
 
 package main
 
